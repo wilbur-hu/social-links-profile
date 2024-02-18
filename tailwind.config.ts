@@ -14,6 +14,9 @@ const config: Config = {
         'off-black': 'hsl(0, 0%, 8%)',
         'green': 'hsl(75, 94%, 57%)',
       },
+      fontFamily: {
+        'inter': 'var(--font-inter)',
+      }
     },
   },
   plugins: [],

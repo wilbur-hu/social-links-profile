@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({
+  src: "./fonts/Inter-VariableFont_slnt,wght.ttf",
+  display: "swap",
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: "Social Links Profile",
@@ -14,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${inter.variable} h-full`}>
+      <body className="font-inter h-full">{children}</body>
     </html>
   );
 }
