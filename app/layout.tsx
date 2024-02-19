@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="font-inter h-full">{children}</body>
+      <body className="font-inter h-full flex flex-col items-stretch">{children}</body>
     </html>
   );
 }
